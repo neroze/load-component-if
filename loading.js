@@ -37,5 +37,3 @@ export default class Loading extends React.Component {
 		);
 	}
 }
-
-A Simple high order component (HOC) that helps to show loading sign untill child component is ready
