@@ -6,14 +6,8 @@ A Simple high order component (HOC) that helps to show loading sign until child 
 ## Usage
 **npm**
 ```
-npm install --save
+npm i hoc-loading
 ```
-
-**bower**
-```
-bower install --save
-```
-
 Usage:
 
 ```
@@ -33,19 +27,12 @@ export default class App extends React.Component {
 		}
 	}
 
-	componentDidMount() {
-	
-		Promise.all([
-			Backbone.Radio.request('plan', 'list'),
-		])
-			.then(([plans]) => {
-				this.setState({
-					plans
-				})
+	componentDidMount = () => {
+		setTimeout(() => {
+			this.setState({
+				plans
 			})
-			.catch((e) => {
-				App.log(e)
-			})
+		}, 5000)
 	}
 
 	render = () => {
