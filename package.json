@@ -1,6 +1,6 @@
 {
   "name": "hoc-loading",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Simple high order component (HOC) that helps to show loading sign until child component is ready",
   "main": "dist/loading.js",
   "repository": "git@github.com:neroze/load-component-if.git",
