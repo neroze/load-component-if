@@ -31,7 +31,7 @@ var Loading = function (_React$Component) {
 		var _this = _possibleConstructorReturn(this, (Loading.__proto__ || Object.getPrototypeOf(Loading)).call(this, props));
 
 		_this.state = {
-			loading: false
+			loading: true
 		};
 		return _this;
 	}
@@ -39,7 +39,7 @@ var Loading = function (_React$Component) {
 	_createClass(Loading, [{
 		key: 'componentDidMount',
 		value: function componentDidMount() {
-			var loading = this.state.loading;
+			var loading = this.props.loading;
 			this.setState({
 				loading: loading
 			});
@@ -58,7 +58,6 @@ var Loading = function (_React$Component) {
 		value: function render() {
 			var loading = this.state.loading;
 			var Spinner = this.props.spinner;
-
 			return loading ? Spinner ? _react2.default.createElement(
 				'div',
 				null,
