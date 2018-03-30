@@ -10,12 +10,12 @@ export default class Loading extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			loading: false
+			loading: true
 		}
 	}
 
 	componentDidMount() {
-		const loading = this.state.loading;
+		const loading = this.props.loading;
 		this.setState({
 			loading
 		})
@@ -31,7 +31,6 @@ export default class Loading extends React.Component {
 	render() {
 		const loading = this.state.loading;
 		const Spinner = this.props.spinner;
-
 		return (
 			loading ? (Spinner ? <div><Spinner />Loading spinner</div>: 'Loading...') : this.props.children
 		);
