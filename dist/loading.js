@@ -58,12 +58,7 @@ var Loading = function (_React$Component) {
 		value: function render() {
 			var loading = this.state.loading;
 			var Spinner = this.props.spinner;
-			return loading ? Spinner ? _react2.default.createElement(
-				'div',
-				null,
-				_react2.default.createElement(Spinner, null),
-				'Loading spinner'
-			) : 'Loading...' : this.props.children;
+			return loading ? Spinner ? _react2.default.createElement(Spinner, null) : 'Loading...' : this.props.children;
 		}
 	}]);
 
