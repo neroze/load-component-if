@@ -32,7 +32,7 @@ export default class Loading extends React.Component {
 		const loading = this.state.loading;
 		const Spinner = this.props.spinner;
 		return (
-			loading ? (Spinner ? <div><Spinner />Loading spinner</div>: 'Loading...') : this.props.children
+			loading ? (Spinner ? <Spinner />: 'Loading...') : this.props.children
 		);
 	}
 }
